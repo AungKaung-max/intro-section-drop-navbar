@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".dropdown-btn");
+  const menuToggle = document.getElementById("menu-toggle");
+  const navContainer = document.getElementById("navContainer");
+  const overlay = document.getElementById("overlay");
+  const menuIcon = document.getElementById("menu-icon");
 
   buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
@@ -26,5 +30,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll(".arrow-icon")
       .forEach((icon) => icon.classList.remove("arrow-rotate"));
+  });
+
+  menuToggle.addEventListener("click", function () {
+    navContainer.classList.toggle("active");
+    overlay.classList.toggle("active");
+    const isOpen = navContainer.classList.contains("active");
+
+    menuIcon.style.opacity = 0;
+    setTimeout(() => {
+      menuIcon.src = isOpen
+        ? "./images/icon-close-menu.svg"
+        : "./images/icon-menu.svg";
+      menuIcon.style.opacity = 1;
+    }, 150);
+  });
+
+  overlay.addEventListener("click", function () {
+    navContainer.classList.remove("active");
+    overlay.classList.remove("active");
   });
 });

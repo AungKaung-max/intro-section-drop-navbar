@@ -20,5 +20,5 @@ This project demonstrates how to build a **responsive navigation bar** using **H
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/responsive-navbar.git
+   git clone https://github.com/AungKaung-max/intro-section-drop-navbar.git
    ```
