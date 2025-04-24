@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snap Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fefefe;
+            color: #141414;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 80px;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .hero-left {
+            max-width: 500px;
+        }
+
+        .hero-left h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-left h1 span {
+            display: block;
+        }
+
+        .hero-left p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #141414;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+        .clients img {
+            height: 24px;
+            margin-right: 25px;
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .person-photo img {
+            width: 300px;
+            border: none;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="hero-section">
+        <div class="hero-left">
+            <h1><span>Make</span> remote work</h1>
+            <p>
+                Get your team in sync, no matter your location. Streamline processes,
+                create team rituals, and watch productivity soar.
+            </p>
+            <button class="cta-button">Learn more</button>
+            <div class="clients">
+                <img src="images/client-databiz.svg" alt="Databiz" />
+                <img src="images/client-audiophile.svg" alt="Audiophile" />
+                <img src="images/client-meet.svg" alt="Meet" />
+                <img src="images/client-maker.svg" alt="Maker" />
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="person-photo">
+                <img src="images/image-hero-desktop.png" alt="Person working" />
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
