@@ -151,9 +151,10 @@
 #hero {
   margin: 20px 0;
 }
+
 .hero-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
@@ -186,14 +187,18 @@
 }
 
 .learn-button {
-  /* background: hsl(0, 0%, 8%); */
-  /* color: hsl(0, 0%, 98%); */
   color: hsl(0, 0%, 8%);
   padding: 12px 24px;
-  border-radius: 12px;
+  border-radius: 10px;
+  background: none;
   font-weight: 700;
   cursor: pointer;
   margin-bottom: 50px;
+}
+
+.learn-button:hover {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
 }
 
 .clients img {
@@ -201,13 +206,13 @@
   margin-right: 15px;
 }
 
-.hero-right {
-  margin-left: 150px;
-}
-
 .person-photo img {
   width: 300px;
   object-fit: cover;
+}
+
+#mobile-img {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -282,5 +287,51 @@
 
   .overlay.active {
     opacity: 1;
+  }
+
+  /* end navbar for mobile */
+
+  #desktop-img {
+    display: none;
+  }
+
+  #mobile-img {
+    display: block;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+
+  .hero-right {
+    margin-left: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-left h1 span {
+    display: inline;
+  }
+
+  .hero-left p {
+    text-align: center;
+  }
+
+  .learn-button {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .clients img {
+    margin-top: 50px;
+  }
+
+  .person-photo img {
+    width: 100%;
   }
 }
