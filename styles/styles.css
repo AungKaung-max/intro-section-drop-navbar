@@ -179,7 +179,6 @@ body {
   transition: opacity 0.3s ease;
 }
 
-/* Hero Section */
 #hero {
   padding: 20px 5%;
   margin: 40px auto;
@@ -261,7 +260,6 @@ body {
   display: none;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .hero-content {
     gap: 30px;
@@ -334,7 +332,6 @@ body {
     padding: 10px;
   }
 
-  /* Hero Section Mobile */
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
