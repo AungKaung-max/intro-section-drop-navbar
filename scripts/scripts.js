@@ -50,4 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
     navContainer.classList.remove("active");
     overlay.classList.remove("active");
   });
+
+  //gsap
+
+  // Navbar animation
+  gsap.from(".navbar", {
+    duration: 0.8,
+    y: -50,
+    opacity: 0,
+    ease: "power2.out",
+  });
+
+  // Hero section animation
+  gsap.from(".hero-left", {
+    duration: 1,
+    x: -100,
+    opacity: 0,
+    delay: 0.3,
+  });
+
+  gsap.from(".hero-right", {
+    duration: 1,
+    x: 100,
+    opacity: 0,
+    delay: 0.3,
+  });
 });
